@@ -1,0 +1,110 @@
+# VITAL RED Gmail Integration - Backend Requirements
+
+# === FRAMEWORK WEB ===
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# === BASE DE DATOS MYSQL ===
+sqlalchemy==2.0.23
+aiomysql==0.2.0
+pymysql==1.1.0
+alembic==1.13.1
+
+# === GMAIL API ===
+google-api-python-client==2.108.0
+google-auth-httplib2==0.1.1
+google-auth-oauthlib==1.1.0
+google-auth==2.25.2
+
+# === PROCESAMIENTO DE CORREOS ===
+email-validator==2.1.0.post1
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# === PROCESAMIENTO DE ADJUNTOS ===
+# PDFs
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# Imágenes
+Pillow==10.1.0
+opencv-python==4.8.1.78
+
+# OCR (Reconocimiento de texto en imágenes)
+pytesseract==0.3.10
+easyocr==1.7.0
+
+# Documentos Office
+python-docx==1.1.0
+openpyxl==3.1.2
+
+# === ANÁLISIS DE CONTENIDO ===
+# Procesamiento de texto
+nltk==3.8.1
+spacy==3.7.2
+textblob==0.17.1
+
+# Expresiones regulares mejoradas
+regex==2023.10.3
+
+# === UTILIDADES ===
+# HTTP Async
+aiohttp==3.9.1
+httpx==0.25.2
+
+# Fechas y tiempo
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Archivos y paths
+pathlib2==2.3.7.post1
+
+# Hashing y criptografía
+hashlib2==1.1.0
+
+# === LOGGING Y MONITOREO ===
+structlog==23.2.0
+loguru==0.7.2
+
+# === TESTING (Opcional) ===
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2  # Para testing de APIs
+
+# === VALIDACIÓN Y SEGURIDAD ===
+# Validación de datos
+validators==0.22.0
+
+# Sanitización de HTML
+bleach==6.1.0
+
+# === CONFIGURACIÓN ===
+python-dotenv==1.0.0
+python-multipart==0.0.6
+
+# === CONCURRENCIA ===
+asyncio==3.4.3
+concurrent-futures==3.1.1
+
+# === BACKUP Y COMPRESIÓN ===
+zipfile36==0.1.3
+
+# === CORS ===
+python-cors==1.7.0
+
+# === TIPOS (DESARROLLO) ===
+types-requests==2.31.0.10
+types-python-dateutil==2.8.19.14
+
+# === ANÁLISIS MÉDICO ESPECÍFICO ===
+# Para detectar información médica en textos
+scikit-learn==1.3.2
+pandas==2.1.3
+
+# === MANEJO DE MEMORIA ===
+psutil==5.9.6
+
+# === SERIALIZACIÓN ===
+orjson==3.9.10

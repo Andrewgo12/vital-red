@@ -5,9 +5,10 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Textarea } from "@/components/ui/textarea"
 import {
   MapPin,
   Pill,
@@ -801,7 +802,7 @@ export default function HospitalizadosPage() {
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4">
-            {zones.map((zone) => (
+            {zoneMap.map((zone) => (
               <div key={zone.name} className="p-4 border rounded-lg">
                 <div className="flex justify-between items-center mb-2">
                   <h4 className="font-semibold">{zone.name}</h4>
