@@ -802,7 +802,7 @@ export default function HospitalizadosPage() {
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4">
-            {zones.map((zone) => (
+            {zoneMap.map((zone) => (
               <div key={zone.name} className="p-4 border rounded-lg">
                 <div className="flex justify-between items-center mb-2">
                   <h4 className="font-semibold">{zone.name}</h4>
